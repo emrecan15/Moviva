@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api";
+const BASE_URL = process.env.INTERNAL_API_URL || "http://localhost:8080/api";
 
 async function getAuthHeaders() {
   const cookieStore = await cookies();

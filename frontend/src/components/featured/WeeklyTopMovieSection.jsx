@@ -11,6 +11,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function WeeklyTopMovieSection({ movies }) {
+if (!movies || movies.length === 0) {
+    return null;
+  }
   const movie = movies[0];
 
   return (

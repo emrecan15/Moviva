@@ -7,6 +7,7 @@ import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import SaveButton from "./SaveButton";
 import SettingsCard from "./SettingsCard";
+import { changePasswordAction } from "@/actions/authActions";
 
 export default function SecuritySettings() {
   const [error, setError] = useState("");

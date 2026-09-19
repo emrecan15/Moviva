@@ -14,6 +14,8 @@ import { redirect } from "next/navigation";
 import CreateListButton from "./_components/CreateListButton";
 import AllListsModal from "./_components/AllListModal";
 
+export const dynamic = "force-dynamic";
+
 const favoriteMovies = [
   {
     id: 1,
@@ -54,7 +56,7 @@ export default async function Profile() {
     authStatus = auth;
     listsResponse = fetchedLists;
   } catch (error) {
-    throw new Error("Profil bilgileri yüklenirken sunucu hatası oluştu.");
+   throw new Error("Profil bilgileri yüklenirken sunucu hatası oluştu.");
   }
 
   if (!authStatus?.authenticated) {

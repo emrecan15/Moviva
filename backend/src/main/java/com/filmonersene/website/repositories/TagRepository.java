@@ -7,5 +7,5 @@ import com.filmonersene.website.entities.Tag;
 
 @Repository
 public interface TagRepository extends JpaRepository<Tag, Long>{
-
+    boolean existsByName(String name);
 }
