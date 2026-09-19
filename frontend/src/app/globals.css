@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+}
+
+@theme{
+
+  --color-logo:#1B1710;
+  --color-slogan:#7A6E62;
+
+  --color-cardbg:#FDFBF7;
+  --color-rating:#F0D48A;
+
+  --color-tmdb:#01b4e4;
+
+
+  --color-background:#FAF6EF;
+  --color-danger:#B8431F;
+
+  --color-navbarbg:#EAE4D9;
+
+  --color-search-border-focus:#D33708;
+}
+
+html {
+  overflow-y: scroll;
+}
+/*
+ * {
+  outline: 1px solid red;
+} 
+  */
